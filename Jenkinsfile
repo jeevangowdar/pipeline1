@@ -2,11 +2,13 @@ pipeline{
 	agent any
 	stages {
 		stage('build') {
-				sh 'echo $PATH'
+			steps{
+				sh 'sleep 5;echo $PATH'
 			}
 		}
-		stage('test') {
-				sh 'echo"wasssup"'
+		stage('test'){
+			steps{
+				sh 'echo "wassupp"'
 			}
 		}
 	}
